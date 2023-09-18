@@ -1,0 +1,30 @@
+<div class="container">
+  <table class="table table-dark">
+    <thead>
+      <tr scope="col">
+        Id
+      </tr>
+      <tr scope="col">
+       Name
+      </tr>
+      <tr scope="col">
+       Ver
+      </tr>
+      <tr scope="col">
+        Editar
+      </tr>
+      <tr scope="col">
+       Elimianr
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let foo of foos">
+        <th>{{foo.id}}</th>
+        <th>{{foo.name}}</th>
+        <th><button class="btn btn-outline-primary">Ver</button></th>
+        <th><button class="btn btn-outline-warning">Editar</button></th>
+        <th><button class="btn btn-outline-danger">Eliminar</button></th>
+      </tr>
+    </tbody>
+  </table>
+</div>
